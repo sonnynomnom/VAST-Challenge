@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example 3</title>
+  <title>Tutorial 3</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -12,9 +12,9 @@
     <h2> <a href="index.html">ggplot2</a></h2>
 
       <ul>
-        <li><a href="example1.html">Example 1<a></li>
-        <li><a href="example2.html">Example 2<a></li>
-        <li><a href="example3.html">Example 3<a></li>
+        <li><a href="example1.html">Tutorial 1<a></li>
+        <li><a href="example2.html">Tutorial 2<a></li>
+        <li><a href="example3.html">Tutorial 3<a></li>
         <br>
         <li><a href="timecurves.pdf">Time Curves</a></li>
         <br>
@@ -32,14 +32,28 @@
 
 
     <div class="main">
-      <h1>Example 3</h1>
+      <h1>Tutorial 3</h1>
       <h4>Histogram</h4>
   
+      <p>We can also make a histogram using qplot() by only specifying a single variable.</p>
+
+      <p><b>Step 1)</b> Load and attach the package in R: <i>library(ggplot2)</i></p>
+      <p><b>Step 2)</b> Load the data with the <i>read.table(file, header=TRUE, sep=",")</i> function. The first argument is the address of the file. The second argument header is a logical value indicating whether the file contains the names of the variables as its first line. The third argument sep is the field sperator character. </p>
+      <p><b>Step 3)</b> Let's take a look at the internal structure of the data by using the str() function. Notice how the all the parenthesis inside column names from the data have became periods.</p>
+      <p>Example: PT08.S5(O3) have became PT08.S5.O3</p>
+      <p><b>Step 4)</b> Now we can create the plot using qplot. Inside <i>qplot(x, data=z)</i>, the first attribute is the x coordinate and the "data=" is the data frame.</p>
+
       <p><img class ="code" src="5.jpg" alt="5">
-      <img class="graph" src="indiumoxide1.jpeg" alt="indiumoxide1">
-      <img class="code" src="6.jpg" alt="6">
-      <img class="graph" src="indiumoxide2.jpeg" alt="indiumoxide2">
-	</p>
+      <br>
+
+      <img class="graph" src="indiumoxide1.jpeg" alt="indiumoxide1"></p>
+
+      <p>Let's improve the graph by adding labels.</p>
+
+      <p><b>Step 4)</b> We can edit the title, x axis label and y axis label by adding <i>labs(title="", x="", y="").</p>
+
+      <p><img class="code" src="6.jpg" alt="6">
+      <img class="graph" src="indiumoxide2.jpeg" alt="indiumoxide2"></p>
 
 	
        
