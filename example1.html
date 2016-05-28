@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example 1</title>
+  <title>Tutorial 1</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -12,7 +12,7 @@
     <h2> <a href="index.html">ggplot2</a></h2>
 
       <ul>
-        <li><a href="example1.html">Example 1<a></li>
+        <li><a href="example 1.html">Tutorial 1<a></li>
         <li><a href="example2.html">Example 2<a></li>
         <li><a href="example3.html">Example 3<a></li>
         <br>
@@ -32,15 +32,28 @@
 
 
     <div class="main">
-      <h1>Example 1</h1>
+      <h1>Tutorial 1</h1>
       <h4>qplot</h4>
   
-      <p><img class ="code" src="1.jpg" alt="1">
-      <img class="graph" src="temperature1.jpeg" alt="temperature1">
-      <img class="code" src="2.jpg" alt="2">
-      <img class="graph" src="temperature2.jpeg" alt="temperature2">
-	</p>
+      <p>In this tutorial, you will get try out the basic <i>qplot()</i> function of ggplot2.</p>
+      <p><b>Step 1)</b> After installing the ggplot2 package, you have to load and attach the package in r: <i>library(ggplot2)</i></p>
+      <p><b>Step 2)</b> Then you can load the data with the <i>read.table(file, header=TRUE, sep=",")</i> function. The first argument is the address of the file. The second argument header is a logical value indicating whether the file contains the names of the variables as its first line. The third argument sep is the field sperator character. </p>
+      <p><b>Step 3)</b> Now we can create the plot using qplot. Inside qplot(x, y, data=z), the first attribute is the x coordinate, and second is the y coordinate and the "data =" is the data frame.</p>
 
+      <p><img class ="code" src="1.jpg" alt="1">
+      
+<br> 
+<img class="graph" src="temperature1.jpeg" alt="temperature1"></p>
+
+
+      <p>And we have our first plot created with ggplot2! Now let's see if we can improve it.</p>
+         <br>
+      <p><b>Step 4)</b> We can change the y axis limits by adding <i>scale_y_continuous(limits=c(min,max)) function</i></p>
+      <p><b>Step 5)</b> Finally, we can edit the title, x axis label and y axis label by adding <i>labs(title="", x="", y="") .</i></p>
+
+      <p><img class="code" src="2.jpg" alt="2">
+      <img class="graph" src="temperature2.jpeg" alt="temperature2">
+</p>
 	
        
 
