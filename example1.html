@@ -48,12 +48,13 @@
       <p><b>Step 1)</b> After installing the ggplot2 package, you have to load and attach the package in R: <i>library(ggplot2)</i></p>
       <p><b>Step 2)</b> Then you can load the data with the <i>read.table(file, header=, sep=)</i> function. The first argument is the address of the file. The second argument header is a logical value indicating whether the file contains the names of the variables as its first line. The third argument sep is the field sperator character. </p>
       <p><b>Step 3)</b> Now we can create the plot using qplot. Inside qplot(x, y, data=), the first attribute is the x coordinate, and second is the y coordinate and the data= is the data frame.</p>
-
       <br>
+      
       <p><img class ="code" src="1.jpg" alt="1"></p>
-
       <br> 
+
       <p><img class="graph" src="temperature1.jpeg" alt="temperature1"></p>
+      <br>
 
       <p>And we have our first plot created with ggplot2! Now let's see if we can improve it.</p>
       <br>
@@ -69,6 +70,7 @@
       <br>	
        
       <p><b>Step 6)</b> Finally, we can associate the levels of variable with color. Here we choose to use the NO2.GT. variable (hourly averaged NO2 concentraion in microg/m^3)</p>
+      <br>
  
       <p><img class="code" src="extra.jpg" alt="2"></p>
       <br>
